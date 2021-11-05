@@ -30,7 +30,7 @@
 
     computed: {
       weapons() {
-        let weapons = this.$store.state.weapons;
+        let weapons = [...this.$store.state.weapons].filter(w => w.progress.aether !== null);
 
         let { hideCompleted, hideNonRequired, category } = this.$store.state.filters.aether;
 

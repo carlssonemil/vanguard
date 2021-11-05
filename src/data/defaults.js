@@ -25,6 +25,22 @@ const aetherProgress = {
   'Death Artist': false
 }
 
+const meleeProgress = {
+  'Pack Tactics': false,
+  'Surgical': false,
+  'Predatory Ambition': false,
+  'Reptilian': false,
+  'Deadeye': false,
+}
+
+const launcherProgress = {
+  'Pack Tactics': false,
+  'Surgical': false,
+  'Predatory Ambition': false,
+  'Reptilian': false,
+  'Deadeye': false,
+}
+
 // Default filters
 const defaultFilters = {
   aether: {
@@ -40,4 +56,4 @@ const defaultFilters = {
   }
 }
 
-export { atomicProgress, aetherProgress, defaultFilters }
+export { atomicProgress, aetherProgress, meleeProgress, launcherProgress, defaultFilters }
