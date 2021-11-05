@@ -66,13 +66,11 @@ export default new Vuex.Store({
 
     // DEBUG
     COMPLETE_ATOMIC(state) {
-      state.weapons.filter(weapon => weapon.required)
-                   .forEach(weapon => Object.keys(weapon.progress.atomic)
+      state.weapons.forEach(weapon => Object.keys(weapon.progress.atomic)
                    .forEach(camo => weapon.progress.atomic[camo] = true));
     },
     COMPLETE_AETHER(state) {
-      state.weapons.filter(weapon => weapon.required)
-                   .forEach(weapon => Object.keys(weapon.progress.aether)
+      state.weapons.forEach(weapon => Object.keys(weapon.progress.aether)
                    .forEach(camo => weapon.progress.aether[camo] = true));
     },
     COMPLETE_ALL_BUT_ONE(state) {
