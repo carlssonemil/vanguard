@@ -21,6 +21,7 @@
                 <div :class="['inner', { completed }]">
                   <eva-icon class="completed" name="checkmark" fill="#10ac84"></eva-icon>
                   <eva-icon v-if="completed" class="remove" name="close" fill="#ee5253"></eva-icon>
+                  <p style="font-size: 10px;">{{ camo }}</p>
                   <!--<img :src="require(`../assets/camouflages/${ convertToKebabCase(camo) }.png`)" :alt="camo">-->
                 </div>     
               </div>
@@ -166,7 +167,7 @@
         .progress {
           display: grid;
           gap: 5px;
-          grid-template-columns: repeat(7, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(2, auto);
           margin-top: 5px;
 
@@ -182,6 +183,7 @@
               height: 100%;
               justify-content: center;
               overflow: hidden;
+              padding: 4px 0;
               position: relative;
               transition: $transition;
               width: 100%;
