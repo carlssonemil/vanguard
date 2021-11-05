@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import { atomicProgress, aetherProgress, defaultFilters } from '../data/defaults'
+import { defaultProgress, defaultFilters } from '../data/defaults'
 import defaultWeapons from '../data/weapons'
 import camouflages from '../data/camouflages'
 
@@ -26,8 +26,8 @@ export default new Vuex.Store({
       if (weapons) {
         weapons.forEach(weapon => {
           state.weapons.find(w => w.name === weapon.name).progress = {
-            aether: { ...aetherProgress, ...weapon.progress.aether },
-            atomic: { ...atomicProgress, ...weapon.progress.atomic }
+            aether: { ...defaultProgress, ...weapon.progress.aether },
+            atomic: { ...defaultProgress, ...weapon.progress.atomic }
           }
         });
       }

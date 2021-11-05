@@ -1,4 +1,4 @@
-import { atomicProgress, aetherProgress } from '../defaults'
+import { defaultProgress } from '../defaults'
 
 const weapons = ['MG42', 'DP27', 'Type 11', 'Bren']
 const original = ['MG42', 'DP27', 'Type 11', 'Bren']
@@ -8,7 +8,7 @@ export default weapons.map(weapon => ({
   name: weapon,
   dlc: !original.includes(weapon),
   progress: {
-    aether: { ...aetherProgress },
-    atomic: { ...atomicProgress }
+    aether: { ...defaultProgress },
+    atomic: { ...defaultProgress }
   }
 }));

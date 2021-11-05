@@ -1,18 +1,5 @@
 // Default progress
-const atomicProgress = {
-  'Pack Tactics': false,
-  'Surgical': false,
-  'Predatory Ambition': false,
-  'Reptilian': false,
-  'Deadeye': false,
-  'Berserker': false,
-  'Wildcat': false,
-  'Survivalist': false,
-  'Mindgames': false,
-  'Death Artist': false
-}
-
-const aetherProgress = {
+const defaultProgress = {
   'Pack Tactics': false,
   'Surgical': false,
   'Predatory Ambition': false,
@@ -56,4 +43,4 @@ const defaultFilters = {
   }
 }
 
-export { atomicProgress, aetherProgress, meleeProgress, launcherProgress, defaultFilters }
+export { defaultProgress, meleeProgress, launcherProgress, defaultFilters }
