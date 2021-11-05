@@ -10,7 +10,7 @@
     <nav class="container">
       <router-link to="/" class="logo">
         <div class="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M88.2,18C64.8,18.3,50,6.1,50,6.1S35.2,18.3,11.8,18c0,0-9.6,63,38.2,76C97.8,80.9,88.2,18,88.2,18z M50,79    c-31.6-8.6-25.2-50.2-25.2-50.2C40.2,29.1,50,21,50,21s9.8,8.1,25.2,7.8C75.2,28.8,81.6,70.5,50,79z"/><polygon points="50,36.5 45.6,45.4 35.8,46.8 42.9,53.7 41.2,63.5 50,58.9 58.8,63.5 57.1,53.7 64.2,46.8 54.4,45.4   "/></g></g></svg>
+          <img :src="require(`./assets/${logo}.png`)">
         </div>
         <p><span>Vanguard</span></p>
       </router-link>
@@ -29,7 +29,7 @@
         <div class="header">
           <router-link to="/" class="logo">
             <div class="icon-container">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M88.2,18C64.8,18.3,50,6.1,50,6.1S35.2,18.3,11.8,18c0,0-9.6,63,38.2,76C97.8,80.9,88.2,18,88.2,18z M50,79    c-31.6-8.6-25.2-50.2-25.2-50.2C40.2,29.1,50,21,50,21s9.8,8.1,25.2,7.8C75.2,28.8,81.6,70.5,50,79z"/><polygon points="50,36.5 45.6,45.4 35.8,46.8 42.9,53.7 41.2,63.5 50,58.9 58.8,63.5 57.1,53.7 64.2,46.8 54.4,45.4   "/></g></g></svg>
+              <img :src="require(`./assets/${logo}.png`)">
             </div>
             <p><span>Vanguard</span></p>
           </router-link>
@@ -93,6 +93,12 @@ export default {
       production: process.env.NODE_ENV === 'production',
       mobileNav: false,
       showNotice: false
+    }
+  },
+
+  computed: {
+    logo() {
+      return this.$route.name === 'Aether' ? 'aether' : 'atomic';
     }
   },
 

@@ -39,6 +39,12 @@ nav {
         width: 25px;
       }
 
+      img {
+        height: 100%;
+        transition: $transition;
+        width: 100%;
+      }
+
       svg {
         fill: white;
         position: relative;
