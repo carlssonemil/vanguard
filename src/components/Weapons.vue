@@ -143,7 +143,7 @@
           }
 
           &.completed {
-            background: $yellow;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  $yellow 0%, darken($yellow, 10%) 90% );
             color: black;
           }
 
