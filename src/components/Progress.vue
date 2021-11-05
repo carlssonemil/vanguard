@@ -116,11 +116,11 @@
   z-index: 100;
 
   &.atomic {
-    background: $purple;
+    background: $orange;
   }
 
   &.aether {
-    background: $red;
+    background: $aether-green;
   }
 
   h2 {
@@ -153,13 +153,13 @@
 
     &.atomic {
       .bar {
-        background: $purple;
+        background: $orange;
       }
     }
 
     &.aether {
       .bar {
-        background: $red;
+        background: $aether-green;
       }
     }
 

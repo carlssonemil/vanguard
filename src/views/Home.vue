@@ -81,11 +81,11 @@ h2 {
     }
 
     &.atomic {
-      background: $purple;
+      background: darken($orange, 10%);
     }
 
     &.aether {
-      background: $red;
+      background: darken($aether-green, 10%);
     }
 
     span {
