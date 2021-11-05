@@ -116,11 +116,11 @@
   z-index: 100;
 
   &.atomic {
-    background: $orange;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(255, 196, 0) 0%, rgba(240,107,5,1) 90% );
   }
 
   &.aether {
-    background: $aether-green;
+    background-image: radial-gradient( circle farthest-corner at -1% 57.5%,  rgba(19,170,82,1) 0%, rgba(0,102,43,1) 90% );
   }
 
   h2 {
@@ -153,13 +153,13 @@
 
     &.atomic {
       .bar {
-        background: $orange;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(255, 196, 0) 0%, rgba(240,107,5,1) 90% );
       }
     }
 
     &.aether {
       .bar {
-        background: $aether-green;
+        background-image: radial-gradient( circle farthest-corner at -1% 57.5%,  rgba(19,170,82,1) 0%, rgba(0,102,43,1) 90% );
       }
     }
 
