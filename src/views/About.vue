@@ -13,7 +13,7 @@
       </div>
 
       <h4>Open source</h4>
-      <p>Built with <a href="https://vuejs.org/">Vue</a>, hosted on <a href="https://vercel.com/">Vercel</a> and analytics by <a href="https://plausible.io/">Plausible</a>. Icon used in logotype and favicon is created by <a href="https://thenounproject.com/search/?q=army+star&i=1602410">Wira Wianda</a> from <a href="https://thenounproject.com/">Noun Project</a>. The code to this site is available on <a href="https://github.com/carlssonemil/vanguard">GitHub</a>.</p>
+      <p>Built with <a href="https://vuejs.org/">Vue</a>, hosted on <a href="https://vercel.com/">Vercel</a> and analytics by <a href="https://plausible.io/">Plausible</a>. The code to this site is available on <a href="https://github.com/carlssonemil/vanguard">GitHub</a>.</p>
     
       <h4>DM Ultra & Dark Aether</h4>
       <p>Looking for a completionist tracker for <i>Call of Duty: Cold War (2020)</i>? I made one conveniently named <a href="https://coldwar.vercel.app">Cold War</a>.</p>
