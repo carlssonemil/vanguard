@@ -73,7 +73,11 @@ export default new Vuex.Store({
     },
 
     RESET_PROGRESS(state, type) {
-      state.weapons.forEach(weapon => Object.keys(weapon.progress[type]).forEach(camo => weapon.progress[type][camo] = false));
+      state.weapons.forEach(weapon => {
+        if (weapon.progress[type]) {
+          Object.keys(weapon.progress[type]).forEach(camo => weapon.progress[type][camo] = false);
+        }
+      });
     },
 
     // DEBUG
