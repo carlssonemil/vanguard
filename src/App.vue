@@ -103,7 +103,7 @@ export default {
   data() {
     return {
       production: process.env.NODE_ENV === 'production',
-      mobileNav: true,
+      mobileNav: false,
       showNotice: false
     }
   },
