@@ -51,7 +51,9 @@
 
     methods: {
       calculateProgress(weapons) {
-        const categories = ['Assault Rifles', 'Launchers', 'Light Machine Guns', 'Melee', 'Handguns', 'Shotguns', 'Sniper Rifles', 'Marksman Rifles', 'Submachine Guns'];
+        const categories = this.type === 'atomic' ? 
+                           ['Assault Rifles', 'Launchers', 'Light Machine Guns', 'Melee', 'Handguns', 'Shotguns', 'Sniper Rifles', 'Marksman Rifles', 'Submachine Guns'] :
+                           ['Assault Rifles', 'Light Machine Guns', 'Handguns', 'Shotguns', 'Sniper Rifles', 'Marksman Rifles', 'Submachine Guns'];
         const progress = {};
 
         categories.forEach(category => {

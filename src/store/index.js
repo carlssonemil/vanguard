@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import { defaultProgress, defaultFilters } from '../data/defaults'
+import { defaultProgress, meleeProgress, launcherProgress, defaultFilters } from '../data/defaults'
 import defaultWeapons from '../data/weapons'
 import camouflages from '../data/camouflages'
 
@@ -25,9 +25,21 @@ export default new Vuex.Store({
 
       if (weapons) {
         weapons.forEach(weapon => {
-          state.weapons.find(w => w.name === weapon.name).progress = {
-            aether: { ...defaultProgress, ...weapon.progress.aether },
-            atomic: { ...defaultProgress, ...weapon.progress.atomic }
+          if (weapon.category === 'Melee') {
+            state.weapons.find(w => w.name === weapon.name).progress = {
+              atomic: { ...meleeProgress, ...weapon.progress.atomic },
+              aether: null
+            }
+          } else if (weapon.category === 'Launchers') {
+            state.weapons.find(w => w.name === weapon.name).progress = {
+              atomic: { ...launcherProgress, ...weapon.progress.atomic },
+              aether: null
+            }
+          } else {
+            state.weapons.find(w => w.name === weapon.name).progress = {
+              aether: { ...defaultProgress, ...weapon.progress.aether },
+              atomic: { ...defaultProgress, ...weapon.progress.atomic }
+            }
           }
         });
       }
