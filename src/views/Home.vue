@@ -4,7 +4,6 @@
       <h1>Vanguard</h1>
       <h2>Simple, lightweight & intuitive camouflage tracker for Call of Duty: Vanguard</h2>
 
-      <!-- TODO: Fix router links to correct camouflage name -->
       <div class="buttons">
         <button @click="$router.push('/atomic')" class="atomic"><span>Track Atomic</span><eva-icon name="arrow-forward" fill="white"></eva-icon></button>
         <button @click="$router.push('/aether')" class="aether"><span>Track Dark Aether</span><eva-icon name="arrow-forward" fill="white"></eva-icon></button>
