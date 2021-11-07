@@ -123,13 +123,13 @@ export default {
           background: $background-color;
           border-radius: 100%;
           display: flex;
-          height: 27px;
+          height: 28px;
           justify-content: center;
           left: 0;
           position: absolute;
           top: 0;
           transform: scale(150%) translate(-25%, -25%);
-          width: 26px;
+          width: 28px;
 
           ::v-deep svg {
             position: relative;
