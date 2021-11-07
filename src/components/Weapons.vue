@@ -105,7 +105,6 @@
       }
 
       @media (max-width: $tablet) {
-        font-size: 32px;
         margin-bottom: 35px;
       }
     }
@@ -138,8 +137,8 @@
           user-select: none;
 
           @media (max-width: $tablet) {
-            font-size: 20px;
-            padding: #{ $padding * 2 } $padding;
+            font-size: 18px;
+            padding: #{ $padding + 10px } $padding;
           }
 
           &.completed {
