@@ -74,6 +74,7 @@ h2 {
 
     &:hover {
       transform: translateY(-5%);
+      opacity: 1;
 
       i {
         transform: translateX(7.5%);
