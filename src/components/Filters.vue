@@ -30,10 +30,10 @@
                 name="question-mark-circle" 
                 fill="white" 
                 v-tippy="{ placement: 'bottom' }" 
-                :content="'You only need to completed the number of base guns there are for each category to earn the Diamond camouflage. For example, the Assault Rifles requires 7 Gold camouflages to reward the Diamond camouflage.'"></eva-icon>
+                :content="'You only need to complete the number of base guns there are for each category to earn the Diamond camouflage. For example, the Assault Rifles requires 7 Gold camouflages to reward the Diamond camouflage.'"></eva-icon>
       <div class="info mobile">
         <eva-icon name="question-mark-circle" fill="white"></eva-icon>
-        <p>You only need to completed the number of base guns there are for each category to earn the Diamond camouflage. For example, the Assault Rifles requires 7 Gold camouflages to reward the Diamond camouflage.</p>
+        <p>You only need to complete the number of base guns there are for each category to earn the Diamond camouflage. For example, the Assault Rifles requires 7 Gold camouflages to reward the Diamond camouflage.</p>
       </div>
     </div>
   </div>
