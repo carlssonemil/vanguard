@@ -142,10 +142,8 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 100 point blank kills' },
         'Handguns': { default: 'Get 100 point blank kills' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 point blank kills' },
         'Marksman Rifles': { default: 'Get 100 point blank kills' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 point blank kills' },
         'Sniper Rifles': { default: 'Get 100 point blank kills' },
         'Submachine Guns': { default: 'Get 100 point blank kills' }
@@ -153,10 +151,8 @@ export default [
       aether: {
         'Assault Rifles': { default: 'Get 100 Boom-Schrier eliminations' },
         'Handguns': { default: 'Get 100 Boom-Schrier eliminations' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 Boom-Schrier eliminations' },
         'Marksman Rifles': { default: 'Get 100 Boom-Schrier eliminations' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 Boom-Schrier eliminations' },
         'Sniper Rifles': { default: 'Get 100 Boom-Schrier eliminations' },
         'Submachine Guns': { default: 'Get 100 Boom-Schrier eliminations' }
@@ -169,10 +165,8 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 100 hipfire kills' },
         'Handguns': { default: 'Get 100 hipfire kills' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 hipfire kills' },
         'Marksman Rifles': { default: 'Get 100 hipfire kills' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 hipfire kills' },
         'Sniper Rifles': { default: 'Get 100 hipfire kills' },
         'Submachine Guns': { default: 'Get 100 hipfire kills' }
@@ -180,10 +174,8 @@ export default [
       aether: {
         'Assault Rifles': { default: 'Get 20 Sturmkrieger eliminations' },
         'Handguns': { default: 'Get 20 Sturmkrieger eliminations' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 20 Sturmkrieger eliminations' },
         'Marksman Rifles': { default: 'Get 20 Sturmkrieger eliminations' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 20 Sturmkrieger eliminations' },
         'Sniper Rifles': { default: 'Get 20 Sturmkrieger eliminations' },
         'Submachine Guns': { default: 'Get 20 Sturmkrieger eliminations' }
@@ -196,10 +188,8 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 100 kills with certain attachments' },
         'Handguns': { default: 'Get 100 kills with certain attachments' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 kills with certain attachments' },
         'Marksman Rifles': { default: 'Get 100 kills with certain attachments' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 kills with certain attachments' },
         'Sniper Rifles': { default: 'Get 100 kills with certain attachments' },
         'Submachine Guns': { default: 'Get 100 kills with certain attachments' }
@@ -207,10 +197,8 @@ export default [
       aether: {
         'Assault Rifles': { default: 'Get 2000 eliminations with seven attachments equipped' },
         'Handguns': { default: 'Get 2000 eliminations with seven attachments equipped' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 2000 eliminations with seven attachments equipped' },
         'Marksman Rifles': { default: 'Get 2000 eliminations with seven attachments equipped' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 2000 eliminations with seven attachments equipped' },
         'Sniper Rifles': { default: 'Get 2000 eliminations with seven attachments equipped' },
         'Submachine Guns': { default: 'Get 2000 eliminations with seven attachments equipped' }
@@ -223,10 +211,8 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 100 kills with certain attachments' },
         'Handguns': { default: 'Get 100 kills with certain attachments' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 kills with certain attachments' },
         'Marksman Rifles': { default: 'Get 100 kills with certain attachments' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 kills with certain attachments' },
         'Sniper Rifles': { default: 'Get 100 kills with certain attachments' },
         'Submachine Guns': { default: 'Get 100 kills with certain attachments' }
@@ -234,10 +220,8 @@ export default [
       aether: {
         'Assault Rifles': { default: 'Get 3 rapid critical kills 30 times' },
         'Handguns': { default: 'Get 3 rapid critical kills 30 times' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 3 rapid critical kills 30 times' },
         'Marksman Rifles': { default: 'Get 3 rapid critical kills 30 times' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 3 rapid critical kills 30 times' },
         'Sniper Rifles': { default: 'Get 3 rapid critical kills 30 times' },
         'Submachine Guns': { default: 'Get 3 rapid critical kills 30 times' }
@@ -250,10 +234,8 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 100 kills with certain attachments' },
         'Handguns': { default: 'Get 100 kills with certain attachments' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 100 kills with certain attachments' },
         'Marksman Rifles': { default: 'Get 100 kills with certain attachments' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 100 kills with certain attachments' },
         'Sniper Rifles': { default: 'Get 100 kills with certain attachments' },
         'Submachine Guns': { default: 'Get 100 kills with certain attachments' }
@@ -261,10 +243,8 @@ export default [
       aether: {
         'Assault Rifles': { default: 'Get 20 kills without getting hit 20 times' },
         'Handguns': { default: 'Get 20 kills without getting hit 20 times' },
-        'Launchers': { default: 'xxx' },
         'Light Machine Guns': { default: 'Get 20 kills without getting hit 20 times' },
         'Marksman Rifles': { default: 'Get 20 kills without getting hit 20 times' },
-        'Melee': { default: 'xxx' },
         'Shotguns': { default: 'Get 20 kills without getting hit 20 times' },
         'Sniper Rifles': { default: 'Get 20 kills without getting hit 20 times' },
         'Submachine Guns': { default: 'Get 20 kills without getting hit 20 times' }
