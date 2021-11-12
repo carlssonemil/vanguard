@@ -28,7 +28,7 @@ export default new Vuex.Store({
           if (weapon.category === 'Melee') {
             state.weapons.find(w => w.name === weapon.name).progress = {
               atomic: { ...meleeProgress, ...weapon.progress.atomic },
-              aether: null
+              aether: { ...meleeProgress, ...weapon.progress.aether },
             }
           } else if (weapon.category === 'Launchers') {
             state.weapons.find(w => w.name === weapon.name).progress = {
@@ -75,7 +75,7 @@ export default new Vuex.Store({
     RESET_PROGRESS(state, type) {
       state.weapons.forEach(weapon => {
         if (weapon.category === 'Melee') {
-          state.weapons.find(w => w.name === weapon.name).progress[type] = type === 'atomic' ? { ...meleeProgress } : null;
+          state.weapons.find(w => w.name === weapon.name).progress[type] = type === 'atomic' ? { ...meleeProgress } : { ...meleeProgress };
         } else if (weapon.category === 'Launchers') {
           state.weapons.find(w => w.name === weapon.name).progress[type] = type === 'atomic' ? { ...launcherProgress } : null;
         } else {
