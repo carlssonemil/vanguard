@@ -140,13 +140,13 @@ export default [
     name: 'Berserker',
     requirements: {
       atomic: {
-        'Assault Rifles': { default: 'Get 100 point blank kills' },
-        'Handguns': { default: 'Get 100 point blank kills' },
-        'Light Machine Guns': { default: 'Get 100 point blank kills' },
-        'Marksman Rifles': { default: 'Get 100 point blank kills' },
-        'Shotguns': { default: 'Get 100 point blank kills' },
-        'Sniper Rifles': { default: 'Get 100 point blank kills' },
-        'Submachine Guns': { default: 'Get 100 point blank kills' }
+        'Assault Rifles': { default: 'Get 100 close range kills' },
+        'Handguns': { default: 'Get 100 close range kills' },
+        'Light Machine Guns': { default: 'Get 100 close range kills' },
+        'Marksman Rifles': { default: 'Get 100 close range kills' },
+        'Shotguns': { default: 'Get 100 close range kills' },
+        'Sniper Rifles': { default: 'Get 100 close range kills' },
+        'Submachine Guns': { default: 'Get 100 close range kills' }
       },
       aether: {
         'Assault Rifles': { default: 'Get 100 Boom-Schrier eliminations' },

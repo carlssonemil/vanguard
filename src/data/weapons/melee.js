@@ -8,7 +8,7 @@ export default weapons.map(weapon => ({
   name: weapon,
   dlc: !original.includes(weapon),
   progress: {
-    aether: null,
+    aether: { ...meleeProgress },
     atomic: { ...meleeProgress }
   }
 }));
