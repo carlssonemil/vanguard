@@ -131,7 +131,7 @@
           display: flex;
           font-weight: 600;
           justify-content: center;
-          padding: $padding $padding / 2;
+          padding: $padding 0;
           transition: $transition;
           user-select: none;
 
