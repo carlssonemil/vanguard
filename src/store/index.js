@@ -25,20 +25,24 @@ export default new Vuex.Store({
 
       if (weapons) {
         weapons.forEach(weapon => {
-          if (weapon.category === 'Melee') {
-            state.weapons.find(w => w.name === weapon.name).progress = {
-              atomic: { ...meleeProgress, ...weapon.progress.atomic },
-              aether: { ...meleeProgress, ...weapon.progress.aether },
-            }
-          } else if (weapon.category === 'Launchers') {
-            state.weapons.find(w => w.name === weapon.name).progress = {
-              atomic: { ...launcherProgress, ...weapon.progress.atomic },
-              aether: { ...launcherProgress, ...weapon.progress.aether }
-            }
-          } else {
-            state.weapons.find(w => w.name === weapon.name).progress = {
-              atomic: { ...defaultProgress, ...weapon.progress.atomic },
-              aether: { ...defaultProgress, ...weapon.progress.aether }
+          // Check if 'name' exists, i.e. if it's been changed
+          // TODO: Maybe refactor this? Looks a bit messy.
+          if (state.weapons.find(w => w.name === weapon.name)) {
+            if (weapon.category === 'Melee') {
+              state.weapons.find(w => w.name === weapon.name).progress = {
+                atomic: { ...meleeProgress, ...weapon.progress.atomic },
+                aether: { ...meleeProgress, ...weapon.progress.aether },
+              }
+            } else if (weapon.category === 'Launchers') {
+              state.weapons.find(w => w.name === weapon.name).progress = {
+                atomic: { ...launcherProgress, ...weapon.progress.atomic },
+                aether: { ...launcherProgress, ...weapon.progress.aether }
+              }
+            } else {
+              state.weapons.find(w => w.name === weapon.name).progress = {
+                atomic: { ...defaultProgress, ...weapon.progress.atomic },
+                aether: { ...defaultProgress, ...weapon.progress.aether }
+              }
             }
           }
         });
