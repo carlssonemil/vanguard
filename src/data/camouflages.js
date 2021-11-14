@@ -206,7 +206,7 @@ export default [
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
           'Ratt': 'Get 50 ADS Kills with the ZAC 98mm Barrel, 9mm 6 Round Fast Mags, and Lightweight Trigger Equipped',
-          '1911': 'Get 50 ADS Kills with the Gracey Short No. #2 Barrel, .30 Russian Short 8 Round Mags, Steady Trigger Equipped',
+          '1911': 'Get 50 ADS Kills with the Gracey Short No. #2 Barrel, .30 Russian Short 8 Round Mags, and Steady Trigger Equipped',
           'Klauser': 'Get 50 ADS Kills with the Fitzherbert 200mm BL Barrel, .45 ACP 8 Round Mags, and Steady Trigger Equipped',
           'Machine Pistol': 'Get 50 ADS Kills with the Burst-Fire Conversion Barrel, 7.62 Gorenko 40 Round Mags, and Steady Trigger Equipped',
           'Top Break': 'Get 50 Kills Without Taking Damage from that Enemy with the Wilkie W-4 Stub Barrel, .30 Russian Short Mags, and Hair Trigger Equipped' },
@@ -313,7 +313,6 @@ export default [
           'Itra Burst': 'Get 100 Quickscope Kills with the 6.5mm Sakura 20 Round Mags, Botti DII Grip Stock, and Quickscope Proficiency Equipped',
           'NZ-41': 'Get 100 Kills Without Taking Damage from that Enemy with the Orbweaver Custom Barrel, 8mm Klauser 30 Round Mags, and Orbweaver Folding Stock Equipped',
           'Volkssturmgewehr': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick 428mm 05V Barrel, 7.62 Gorenko 30 Round Mags, and Perfectionist Proficiency Equipped'},
-
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
           'Ratt': 'Get 50 ADS Kills with the ZAC 98mm Barrel, .45 ACP 9 Round Mags, and Hair Trigger Equipped',
