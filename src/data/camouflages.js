@@ -100,7 +100,7 @@ export default [
         'Marksman Rifles': { default: 'Get 5 Kills Without Dying 30 Times' },
         'Melee': { default: 'Get 30 Double Kills' },
         'Shotguns': { default: 'Get 5 Kills Without Dying 30 Times' },
-        'Sniper Rifles': { default: 'Get 5 Kills Without Dying 30 Times' },
+        'Sniper Rifles': { default: 'Get 5 Kills Without Dying 100 Times' },
         'Submachine Guns': { default: 'Get 5 Kills Without Dying 30 Times' }
       },
       aether: {
