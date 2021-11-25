@@ -227,7 +227,7 @@ export default [
           '3-Line Rifle': 'Get 100 Longshot Kills with the 270mm Voz Carbine Barrel, .30-06 20 Round Mags, and Kovalevskaya S01 Stock Equipped' },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'MP-40': 'Get 10 Longshot Kills with the Krausnick 317mm 04B Barrel, 8mm Kurz 32 Round Mags, and VDD 34M Padded Stock Equipped',
+          'MP-40': 'Get 100 Longshot Kills with the Krausnick 317mm 04B Barrel, 8mm Kurz 32 Round Mags, and VDD 34M Padded Stock Equipped',
           'M1928': 'Get 100 Kills Without Taking Damage from that Enemy with the Chariot 2.5" Rapid Barrel, CGC Wire Grip Stock, and Disable Proficiency Equipped',
           'Type 100': 'Get 100 Longshot Kills with the Warubachi 134mm Rapid Barrel, 8mm Kurz 40 Round Drums Mags, and Shiraichi T100 Stock Equipped',
           'PPSh-41': 'Get 100 Kills Without Taking Damage from that Enemy with the 8mm Nambu Round Mags, Empress S12P Stock, and Tiger Grip Proficiency Equipped',
