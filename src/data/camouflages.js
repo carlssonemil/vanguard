@@ -173,7 +173,7 @@ export default [
       atomic: {
         'Assault Rifles': { default: 'Get 250 Eliminations with 10 Attachments Equipped' },
         'Handguns': { default: 'Get 50 Kills After Recently Swapping to Your Primary or Secondary Weapon' },
-        'Light Machine Guns': { default: 'Get 100 Hipfire Kills' },
+        'Light Machine Guns': { default: 'Get 100 Bullet Penetration Kills' },
         'Marksman Rifles': { default: 'Get 50 Quick Scope Kills' },
         'Shotguns': { default: 'Get 100 One Shot Kills' },
         'Sniper Rifles': { default: 'Get 50 Kills While Holding You Breath' },
