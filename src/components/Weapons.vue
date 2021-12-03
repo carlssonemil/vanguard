@@ -69,10 +69,6 @@
       },
 
       convertToKebabCase
-    },
-
-    mounted() {
-      console.log(this.weapons);
     }
   }
 </script>
