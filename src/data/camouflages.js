@@ -105,7 +105,7 @@ export default [
         'Shotguns': { default: 'Get 5 Kills Without Dying 30 Times' },
         'Sniper Rifles': { 
           default: 'Get 5 Kills Without Dying 30 Times',
-          '3-Line Rifle': 'Get 5 Kills Without Dying 100 Times' 
+          '3-Line Rifle': 'Get 100 Prone Kills' 
         },
         'Submachine Guns': { default: 'Get 5 Kills Without Dying 30 Times' }
       },
