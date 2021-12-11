@@ -210,7 +210,8 @@ export default [
           'Automaton': 'Get 100 Kills While Moving with the 6.5mm Sakura 45 Round Mags, ZAC Skeletal Stock, and Spotter Proficiency Equipped',
           'Itra Burst': 'Get 100 Hipfire Kills with the Imerito 180mm 02BI Barrel, 8mm Klauser 12 Round Fast Mags, and Botti SSI Skeletal Equipped',
           'NZ-41': 'Get 100 Headshots with the Orbweaver 360mm BC Barrel, LOR MK3 SC Stock, and Defender Kit Equipped',
-          'Volkssturmgewehr': 'Get 100 ADS Kills with the VDD 287mm Barrel, 8mm Kurz 20 Round Fast Mags, and ???' 
+          'Volkssturmgewehr': 'Get 100 ADS Kills with the VDD 287mm Barrel, 8mm Kurz 20 Round Fast Mags, and ???' ,
+          'Cooper Carbine': 'Get 100 ADS Kills with the 22" Cooper Custom Barrel, Cooper Custom Padded Stock, and Hardscope Proficiency Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -236,7 +237,8 @@ export default [
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Kar98k': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick Scout Barrel, 6.5mm Sakura 5 Round Mags, and the Unmarked Proficiency Equipped',
           'Type 99': 'Get 100 Longshot Kills with the Shiraishi 712mm Sniper Barrel, Shiraishi Precision Stock, and Spotter Proficiency Equipped',
-          '3-Line Rifle': 'Get 100 Longshot Kills with the 270mm Voz Carbine Barrel, .30-06 20 Round Mags, and Kovalevskaya S01 Stock Equipped' 
+          '3-Line Rifle': 'Get 100 Longshot Kills with the 270mm Voz Carbine Barrel, .30-06 20 Round Mags, and Kovalevskaya S01 Stock Equipped' ,
+          'Gorenko Anti-Tank Rifle': 'Get 100 Kills After Recently Aiming Down Sights with the 420mm Empress Barrel, ZAC Custom Precision Stock, and Discard Proficiency Equipped'
         },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
@@ -271,7 +273,8 @@ export default [
           'Automaton': 'Get 100 ADS Kills with the Anastasia Sniper Barrel, Empress Broadsword Stock, and Assassin Proficiency Equipped (Bugged)',
           'Itra Burst': 'Get 100 ADS Kills with the Perfetto 140mm Rapida Barrel, Botti SMI Adjustable Stock, and Surveil Proficiency Equipped',
           'NZ-41': 'Get 100 ADS Kills with the Ravenwood 480mm NO.2 Barrel, .303 British 20 Round Fast Mags, Acrobatic Proficiency Equipped',
-          'Volkssturmgewehr': 'Get 100 Kills While Moving with the 8mm Kurz 60 Round Drums Mags, SA Converted Stock, and Gung-Ho Proficiency Equipped'
+          'Volkssturmgewehr': 'Get 100 Kills While Moving with the 8mm Kurz 60 Round Drums Mags, SA Converted Stock, and Gung-Ho Proficiency Equipped',
+          'Cooper Carbine': 'Get 100 Headshots with the 18" Ragdoll G45 Barrel, 9mm 60 Round Drum Mags, and Vital Proficiency Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -297,7 +300,8 @@ export default [
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Kar98k': 'Get 100 ADS Kills with the Krausnick 560mm LWS03K Barrel, 8mm Klauser 3 Round Mags, and Reisdorf Wire Stock Equipped',
           'Type 99': 'Get 100 Headshots with the 8mm Klauser 5 Round Mags, Removed Stock, and Vital Proficiency Equipped',
-          '3-Line Rifle': 'Get 100 ADS Kills with the .303 British 5 Round Mags, MN Custom Stock, and Shrouded Proficiency Equipped' 
+          '3-Line Rifle': 'Get 100 ADS Kills with the .303 British 5 Round Mags, MN Custom Stock, and Shrouded Proficiency Equipped' ,
+          'Gorenko Anti-Tank Rifle': 'Get 100 Kills while Moving with the 240mm ZAC Rapid Barrel, 13mm AM 7 Round Mags, and Anastasia Type 3B Stoyat Stock Equipped'
         },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
@@ -332,7 +336,8 @@ export default [
           'Automaton': 'Get 100 Longshot Kills with the Zac 600mm BFA Barrel, 6.5MM Sakura 75 Round Drums Mags, and Anastasia Padded Stock Equipped',
           'Itra Burst': 'Get 100 Quickscope Kills with the 6.5mm Sakura 20 Round Mags, Botti DII Grip Stock, and Quickscope Proficiency Equipped',
           'NZ-41': 'Get 100 Kills Without Taking Damage from that Enemy with the Orbweaver Custom Barrel, 8mm Klauser 30 Round Mags, and Orbweaver Folding Stock Equipped',
-          'Volkssturmgewehr': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick 428mm 05V Barrel, 7.62 Gorenko 30 Round Mags, and Perfectionist Proficiency Equipped'
+          'Volkssturmgewehr': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick 428mm 05V Barrel, 7.62 Gorenko 30 Round Mags, and Perfectionist Proficiency Equipped',
+          'Cooper Carbine': 'Get 100 Close Range Kills with the 8" Ragdoll Short Barrel, .30 Carbine 20 Round Mags, and Cooper 45RS Stock'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -359,7 +364,8 @@ export default [
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Kar98k': 'Get 100 Longshot Kills with the VDD 660mm 05HE Barrel, VDD Thumbhole Stock, and Shrouded Proficiency Equipped',
           'Type 99': 'Get 100 ADS Kills with the Sakura 776mm Barrel, 6.5mm Sakura 3 Round Fast Mags, and Sakura CVR Custom Stock Equipped',
-          '3-Line Rifle': 'Get 100 Headshots with the 500mm MN Custom Barrel, .30-06 20 Round Mags, and Hardscope Proficiency Equipped' 
+          '3-Line Rifle': 'Get 100 Headshots with the 500mm MN Custom Barrel, .30-06 20 Round Mags, and Hardscope Proficiency Equipped',
+          'Gorenko Anti-Tank Rifle': 'Get 100 Kills While Crouched or Prone with the 440mm Anastasia Custom Barrel, 13mm AM 10 Round Mags, and Kovalevskaya Type 2 Padded Stock Equipped'
         },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
