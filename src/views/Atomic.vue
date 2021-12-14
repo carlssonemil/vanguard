@@ -39,7 +39,7 @@
         if (hideNonRequired) {
           weapons = weapons.filter(weapon => {
             const categoryWeapons = weapons.filter(w => w.category === weapon.category);
-            const required = categoryWeapons.filter(w => !w.dlc).length * 7;
+            const required = categoryWeapons.filter(w => !w.dlc).length * 10;
             const completed = categoryWeapons.reduce((a, w) => a + Object.values(w.progress.atomic).reduce((b, progress) => b + progress, 0), 0);
 
             if (completed === required && !Object.values(weapon.progress.atomic).every(Boolean)) {
