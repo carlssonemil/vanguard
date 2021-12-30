@@ -97,6 +97,7 @@ export default [
         'Handguns': { default: 'Get 5 Kills Without Dying 30 Times' },
         'Launchers': {
           default: 'Destroy 50 Enemy Aerial Killstreaks',
+          'Panzerfaust': 'Get 50 Longshot Kills',
           'MK11 Launcher': 'Get 50 Double Kills' 
         },
         'Light Machine Guns': { default: 'Get 5 Kills Without Dying 30 Times' },
