@@ -232,7 +232,8 @@ export default [
         'Shotguns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Combat Shotgun': 'Get 100 ADS Kills with the Chariot 16" Short Barrel, 12 Gauge 5 Round Tube Mags, and CGC 2M Wire Stock Equipped',
-          'Gracey Auto': 'Get 100 Hipfire Kills with the CGC 22" Rapid Barrel, 12 Gauge 7 Round Mags, and Chariot Sport Stock Equipped' 
+          'Gracey Auto': 'Get 100 Hipfire Kills with the CGC 22" Rapid Barrel, 12 Gauge 7 Round Mags, and Chariot Sport Stock Equipped',
+          'Einhorn Revolving': 'Get 50 Kills Without Taking Damage from that Enemy with the Sawed-Off Barrel, 16 Gauge 7 Round Cylinder Mags, and Reisdorf Folding Stock Equipped'
         },
         'Sniper Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
@@ -359,7 +360,8 @@ export default [
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Combat Shotgun': 'Get 100 Headshots with the Framble 18" Precision Barrel, 16 Gauge 10 Round Drums Mags, and Vital Proficiency Equipped',
           'Gracey Auto': 'Get 100 ADS Kills with the Sawed-Off Barrel, CGC H4 Stock, and Frenzy Proficiency Equipped',
-          'Double Barrel': 'Get 100 ADS Kills with the Sawed-Off Barrel, Fast Loading 12 Gauge Mags, and Panic Proficiency Equippeds' 
+          'Double Barrel': 'Get 100 ADS Kills with the Sawed-Off Barrel, Fast Loading 12 Gauge Mags, and Panic Proficiency Equippeds',
+          'Einhorn Revolving': 'Get 100 Hipfire Kills While Moving with the Birdshot 5 Round Cylinder Mags, VDD Hunter Stock, and Gung-ho Proficiency Equipped'
         },
         'Sniper Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
