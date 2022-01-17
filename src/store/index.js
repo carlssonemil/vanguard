@@ -16,7 +16,8 @@ export default new Vuex.Store({
 
     camouflages: [ ...camouflages ],
 
-    filters: { ...defaultFilters }
+    filters: { ...defaultFilters },
+    playtimeMinutes: 0
   },
 
   mutations: {
@@ -66,8 +67,16 @@ export default new Vuex.Store({
       }
     },
 
+    SET_PLAYTIME(state, playtime) {
+      state.playtimeMinutes = playtime;
+    },
+
     TOGGLE_COMPLETED(state, { mode, weapon, camo, current }) {
       state.weapons.find(w => w.name === weapon.name).progress[mode][camo] = !current;
+    },
+
+    TRIGGER_PLAYTIME(state, {playMinutes }) {
+      state.playtimeMinutes = playMinutes;
     },
 
     TOGGLE_WEAPON_COMPLETED(state, { mode, weapon, current }) {
@@ -112,6 +121,7 @@ export default new Vuex.Store({
     async getStoredData({ dispatch }) {
       await dispatch('getProgress');
       await dispatch('getFilters');
+      await dispatch('getEstimatedPlaytime');
 
       await dispatch('storeData');
     },
@@ -120,6 +130,19 @@ export default new Vuex.Store({
       const data = JSON.parse(localStorage.getItem(token));
       const weapons = data ? data.weapons : null;
       context.commit('SET_PROGRESS', weapons);
+    },
+
+    getEstimatedPlaytime(context) {
+      const data = JSON.parse(localStorage.getItem(token));
+      const playtime = data ? data.playMinutes : 0;
+      context.commit('SET_PLAYTIME', playtime);
+    },
+
+    setEstimatedPlaytime(context, playtime) {
+      // const data = JSON.parse(localStorage.getItem(token));
+      // const weapons = data ? data.playMinutes : null;
+      context.commit('SET_PLAYTIME', playtime);
+      context.dispatch('storeData');
     },
 
     getFilters(context) {
@@ -135,6 +158,12 @@ export default new Vuex.Store({
 
     toggleCompleted(context, { mode, weapon, camo, current }) {
       context.commit('TOGGLE_COMPLETED', { mode, weapon, camo, current });
+      context.dispatch('storeData');
+    },
+
+    playtimeMinutes(context, playMinutes) {
+      console.log('store playtime', playMinutes);
+      context.commit('TRIGGER_PLAYTIME', { playMinutes });
       context.dispatch('storeData');
     },
 
@@ -190,7 +219,8 @@ export default new Vuex.Store({
     storeData() {
       localStorage.setItem(token, JSON.stringify({
         weapons: this.state.weapons,
-        filters: this.state.filters
+        filters: this.state.filters,
+        playtimeMinutes: this.state.playtimeMinutes
       }));
     },
 

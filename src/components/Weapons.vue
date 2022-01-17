@@ -48,6 +48,7 @@
       },
 
       toggleComplete(mode, weapon, camo, current) {
+      console.log('clicked camo');
         this.$store.dispatch('toggleCompleted', { mode, weapon, camo, current });
       },
 

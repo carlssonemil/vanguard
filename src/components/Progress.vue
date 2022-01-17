@@ -14,7 +14,7 @@
              :content="`Progress towards the ${ type === 'atomic' ? 'Atomic' : 'Dark Aether' } camouflage`"
              v-tippy="{ maxWidth: 500 }">
           <div class="bar" :style="{ width: progress + '%' }"></div>
-          <label>{{ type === 'atomic' ? 'Atomic' : 'Dark Aether' }} progress: <span>{{ progress }}%</span></label>
+          <label>{{ type === 'atomic' ? 'Atomic' : 'Dark Aether' }} progress: <span>{{ progress }}%</span><span v-if="progress > 0"> | Estimated Playtime to Complete: {{estimatedPlayTime}}</span></label>
         </div>
       </div>
     </transition>
@@ -38,11 +38,32 @@
     computed: {
       progress() {
         return this.roundToTwoDecimals(this.calculateProgress([...this.$store.state.weapons]) * 100);
+      },
+      estimatedPlayTime() {
+        try{
+          console.log(this.$store.state);
+          const playtimeMins = new Number(this.$store.state.playtimeMinutes);
+          console.log('progress', this.progress);
+          let playtimeToComplete = (100/this.progress) * playtimeMins;
+          const days = Math.floor(playtimeToComplete/1440);
+          playtimeToComplete -= days * 1440;
+          const hours = Math.floor(playtimeToComplete/60);
+          playtimeToComplete -= hours * 60;
+          const minutes = Math.round(playtimeToComplete);
+          
+          
+
+          return `${days}D ${hours}H ${minutes}M`
+        } catch (err){
+          console.error(err);
+        }
+        return null;
       }
     },
 
     watch: {
       progress(newValue) {
+        console.log('progress new value', newValue);
         if (newValue === 100) {
           this.handleCompleted();
         }

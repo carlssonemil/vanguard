@@ -25,6 +25,11 @@
       </label>
     </div>
 
+    <div class="input">
+      <label>Current Playtime:</label>
+      <input type="text" class="input" placeholder="Playtime in minutes or xD xH xM format" @keyup.enter="enterClicked($event)">
+    </div>
+
     <div class="symbols" v-if="showSymbols">
       <eva-icon class="info" 
                 name="question-mark-circle" 
@@ -61,6 +66,44 @@ export default {
       let filters = this.filters;
 
       this.$store.dispatch('setFilters', { type, filters });
+    },
+
+    enterClicked(event) {
+      let pattern = /((\d|\d\d)D) ((\d|\d\d)H) ((\d|\d\d)M)/g;
+      try {
+        let playtimeString = new String(event.target.value).toUpperCase();
+        let result = pattern.test(playtimeString);
+        if(result) {
+          this.calculateCurrentPlaytime(playtimeString);
+        } else {
+          alert('Please input the your playtime in the correct format');
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    },
+
+    calculateCurrentPlaytime(playtimeString) {
+      const splitTime = playtimeString.split(' ');
+      let playtimeTotalMinutes = 0;
+      splitTime.forEach(function(time) {
+        const timeValue = new Number(time.slice(0, time.length-1));
+        const timeType = time.slice(time.length-1);
+        switch(timeType) {
+          case 'D':
+            playtimeTotalMinutes += timeValue * 24 * 60;
+            break;
+          case 'H':
+            playtimeTotalMinutes += timeValue * 60;
+            break;
+          default:
+            playtimeTotalMinutes += timeValue;
+            break;
+        }
+      }, playtimeTotalMinutes);
+
+      this.$store.dispatch('setEstimatedPlaytime', playtimeTotalMinutes);
+
     }
   }
 }
