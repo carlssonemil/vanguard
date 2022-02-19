@@ -23,7 +23,9 @@ export default [
         'Launchers': { default: 'In Zombies, get 2500 Eliminations' },
         'Light Machine Guns': { default: 'In Zombies, get 4000 Eliminations' },
         'Marksman Rifles': { default: 'In Zombies, get 4000 Eliminations' },
-        'Melee': { default: 'In Zombies, Get 1000 Eliminations' },
+        'Melee': {
+          default: 'In Zombies, Get 1000 Eliminations',
+          'Combat Shield': 'In Zombies, get 750 kills' },
         'Shotguns': { default: 'In Zombies, get 4000 Eliminations' },
         'Sniper Rifles': { default: 'In Zombies, get 4000 Eliminations' },
         'Submachine Guns': { default: 'In Zombies, get 4000 Eliminations' }
@@ -47,10 +49,12 @@ export default [
       aether: {
         'Assault Rifles': { default: 'In Zombies, get 800 Critical Kills' },
         'Handguns': { default: 'In Zombies, get 800 Critical Kills' },
-        'Launchers': { default: 'In Zombies, In Zombies, get 10 rapid Kills 50 times' },
+        'Launchers': { default: 'In Zombies, get 3 rapid Kills 50 times' },
         'Light Machine Guns': { default: 'In Zombies, get 800 Critical Kills' },
         'Marksman Rifles': { default: 'In Zombies, get 800 Critical Kills' },
-        'Melee': { default: 'In Zombies, In Zombies, get 10 rapid Kills 50 times' },
+        'Melee': {
+          default: 'In Zombies, get 10 rapid Kills 50 times',
+          'Combat Shield': 'In Zombies, get 5 rapid Kills 50 times' },
         'Shotguns': { default: 'In Zombies, get 800 Critical Kills' },
         'Sniper Rifles': { default: 'In Zombies, get 800 Critical Kills' },
         'Submachine Guns': { default: 'In Zombies, get 800 Critical Kills' }
@@ -80,7 +84,9 @@ export default [
         'Launchers': { default: 'In Zombies, get 2500 Pack-a-Punched Eliminations' },
         'Light Machine Guns': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' },
         'Marksman Rifles': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' },
-        'Melee': { default: 'In Zombies, get 1000 Pack-a-Punched Eliminations' },
+        'Melee': {
+          default: 'In Zombies, get 1000 Pack-a-Punched Eliminations',
+          'Combat Shield': 'In Zombies, absorb 100 enemy Melee attacks' },
         'Shotguns': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' },
         'Sniper Rifles': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' },
         'Submachine Guns': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' }
@@ -141,10 +147,10 @@ export default [
       aether: {
         'Assault Rifles': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
         'Handguns': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
-        'Launchers': { default: 'In Zombies, In Zombies, get 20 Sturmkrieger Eliminations' },
+        'Launchers': { default: 'In Zombies, get 20 Sturmkrieger Eliminations' },
         'Light Machine Guns': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
         'Marksman Rifles': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
-        'Melee': { default: 'In Zombies, In Zombies, get 20 Sturmkrieger Eliminations' },
+        'Melee': { default: 'In Zombies, get 20 Sturmkrieger Eliminations' },
         'Shotguns': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
         'Sniper Rifles': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
         'Submachine Guns': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' }
@@ -210,7 +216,8 @@ export default [
           'Itra Burst': 'Get 100 Hipfire Kills with the Imerito 180mm 02BI Barrel, 8mm Klauser 12 Round Fast Mags, and Botti SSI Skeletal Equipped',
           'NZ-41': 'Get 100 Headshots with the Orbweaver 360mm BC Barrel, LOR MK3 SC Stock, and Defender Kit Equipped',
           'Volkssturmgewehr': 'Get 100 ADS Kills with the VDD 287mm Barrel, 8mm Kurz 20 Round Fast Mags, and Krausnick S12V PS Stock Equipped' ,
-          'Cooper Carbine': 'Get 100 ADS Kills with the 22" Cooper Custom Barrel, Cooper Custom Padded Stock, and Hardscope Proficiency Equipped'
+          'Cooper Carbine': 'Get 100 ADS Kills with the 22" Cooper Custom Barrel, Cooper Custom Padded Stock, and Hardscope Proficiency Equipped',
+          'KG M40': 'Get 100 Headshot Kills with the VDD 24SZ Adjustable Stock, 8mm Klauser 20 Round Mags, and Discard Proficiency Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -225,7 +232,8 @@ export default [
           'Bren': 'Get 100 Longshot Kills with the Queens 775m Scepter Barrel, .303 British 100 Round Drums Mags, and Queens Model 11 BH Stock Equipped',
           'MG42': 'Get 100 Hipfire Kills with the Krausnick 355mm Rapid Barrel, Removed Stock, and Tight Grip Proficiency Equipped',
           'DP27': 'Get 100 100 ADS Kills with the Kovalevskaya 680mm B02D Barrel, 7.62x54mmR 105 Round Pans Mags, and Spotter Proficiency Equipped',
-          'Type 11': 'Get 100 Hipfire Kills While Moving with the Warubachi 352mm Barrel, Shiraishi Skeletal Stock, and Steady Proficiency Equipped'
+          'Type 11': 'Get 100 Hipfire Kills While Moving with the Warubachi 352mm Barrel, Shiraishi Skeletal Stock, and Steady Proficiency Equipped',
+          'Whitley': 'Get 100 Kills While Crouched or Prone with the 26" Gracey Rapid Barrel, .30-06 120 Round Mags, and CGC R2 Padded Stock Equipped'
         },
         'Marksman Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
@@ -281,7 +289,8 @@ export default [
           'Itra Burst': 'Get 100 ADS Kills with the Perfetto 140mm Rapida Barrel, Botti SMI Adjustable Stock, and Surveil Proficiency Equipped',
           'NZ-41': 'Get 100 ADS Kills with the Ravenwood 480mm NO.2 Barrel, .303 British 20 Round Fast Mags, Acrobatic Proficiency Equipped',
           'Volkssturmgewehr': 'Get 100 Kills While Moving with the 8mm Kurz 60 Round Drums Mags, SA Converted Stock, and Gung-Ho Proficiency Equipped',
-          'Cooper Carbine': 'Get 100 Headshots with the 18" Ragdoll G45 Barrel, 9mm 60 Round Drum Mags, and Vital Proficiency Equipped'
+          'Cooper Carbine': 'Get 100 Headshots with the 18" Ragdoll G45 Barrel, 9mm 60 Round Drum Mags, and Vital Proficiency Equipped',
+          'KG M40': 'Get 100 Close Range Kills with the VDD 390mm Rapid Barrel, 8mm Klauser 50 Round Drums, and VDD 22G Padded Stock Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -296,7 +305,8 @@ export default [
           'Bren': 'Get 100 ADS Kills with the Queens 615mm Crown Barrel, .50 BMG 50 Round Mags, and Oak & Shield 12B Stock Equipped',
           'MG42': 'Get 100 ADS Kills with the VDD 680mm 31M Barrel, 8mm Klauser 50 Round Fast Mags, and Krausnick S91MG Stock Equipped',
           'DP27': 'Get 100 Quickscope Kills with the ZAC 595mm Falchion Barrel, 7.62x54mmR 30 Round Fast Belts Mags, and Empress SK Adjustable Stock Equipped',
-          'Type 11': 'Get 100 Kills While Crouched or Prone with the 6.5mm Sakura 90 Round Drums Mags, Warubachi Weighted Stock, and Pressure Proficiency Equipped'
+          'Type 11': 'Get 100 Kills While Crouched or Prone with the 6.5mm Sakura 90 Round Drums Mags, Warubachi Weighted Stock, and Pressure Proficiency Equipped',
+          'Whitley': 'Get 100 ADS Kills with the 20" Ragdoll RE2 Barrel, Gracey EK8 Stock, and Hardscope Proficiency Equipped'
         },
         'Marksman Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
@@ -352,7 +362,8 @@ export default [
           'Itra Burst': 'Get 100 Quickscope Kills with the 6.5mm Sakura 20 Round Mags, Botti DII Grip Stock, and Quickscope Proficiency Equipped',
           'NZ-41': 'Get 100 Kills Without Taking Damage from that Enemy with the Orbweaver Custom Barrel, 8mm Klauser 30 Round Mags, and Orbweaver Folding Stock Equipped',
           'Volkssturmgewehr': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick 428mm 05V Barrel, 7.62 Gorenko 30 Round Mags, and Perfectionist Proficiency Equipped',
-          'Cooper Carbine': 'Get 100 Close Range Kills with the 8" Ragdoll Short Barrel, .30 Carbine 20 Round Mags, and Cooper 45RS Stock'
+          'Cooper Carbine': 'Get 100 Close Range Kills with the 8" Ragdoll Short Barrel, .30 Carbine 20 Round Mags, and Cooper 45RS Stock',
+          'KG M40': 'Get 100 Long Range Kills with the Nilsson 515mm Burst Barrel, .30-06 50 Round Drums, and Brace Proficiency Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -367,7 +378,8 @@ export default [
           'Bren': 'Get 100 Longshot Kills with the Queens 705mm Royal Barrel, Hockenson SP2B Stock, and Dismantle Proficiency Equipped',
           'MG42': 'Get 100 Longshot Kills with the Krausnick 450mm1342MG Barrel, 13mm Anti-Material 125 Round Mags, and Wreck Proficiency Equipped',
           'DP27': 'Get 100 Kills While Crouched or Prone with the .30-06 63 Round Pans Mags, Empress VZV Stock, and Defender Proficiency Equipped',
-          'Type 11': 'Get 100 ADS Kills with the Sakura 261mm Barrel, 6.5mm Sakura 30 Round Mags, and Fleet Proficiency Equipped'
+          'Type 11': 'Get 100 ADS Kills with the Sakura 261mm Barrel, 6.5mm Sakura 30 Round Mags, and Fleet Proficiency Equipped',
+          'Whitley': 'Get 100 Long Range Kills with the 28" Gracey Mk. 9 Barrel, .50 BMG 160 Round Boxes, and Frenzy Proficiency Equipped'
          },
         'Marksman Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
