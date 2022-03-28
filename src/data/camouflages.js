@@ -65,18 +65,18 @@ export default [
     name: 'Predatory Ambition',
     requirements: {
       atomic: {
-        'Assault Rifles': { default: 'Get 50 MultiKills' },
-        'Handguns': { default: 'Get 50 MultiKills' },
+        'Assault Rifles': { default: 'Get 50 Multikills' },
+        'Handguns': { default: 'Get 50 Multikills' },
         'Launchers': {
           default: 'Destroy 50 Ground Killstreaks or Field Upgrades',
           'MK11 Launcher': 'Get 50 Longshot Kills'
         },
-        'Light Machine Guns': { default: 'Get 50 MultiKills' },
-        'Marksman Rifles': { default: 'Get 50 MultiKills' },
+        'Light Machine Guns': { default: 'Get 50 Multikills' },
+        'Marksman Rifles': { default: 'Get 50 Multikills' },
         'Melee': { default: 'Get 30 Slide Kills' },
-        'Shotguns': { default: 'Get 50 MultiKills' },
-        'Sniper Rifles': { default: 'Get 50 MultiKills' },
-        'Submachine Guns': { default: 'Get 50 MultiKills' }
+        'Shotguns': { default: 'Get 50 Multikills' },
+        'Sniper Rifles': { default: 'Get 50 Multikills' },
+        'Submachine Guns': { default: 'Get 50 Multikills' }
       },
       aether: {
         'Assault Rifles': { default: 'In Zombies, get 4000 Pack-a-Punched Eliminations' },
