@@ -1,6 +1,6 @@
 import { defaultProgress } from '../defaults'
 
-const weapons = ['M1 Garand', 'SVT-40', 'G-43']
+const weapons = ['M1 Garand', 'SVT-40', 'G-43', 'M1916']
 const original = ['M1 Garand', 'SVT-40', 'G-43']
 
 export default weapons.map(weapon => ({
