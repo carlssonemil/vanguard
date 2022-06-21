@@ -1,6 +1,6 @@
 import { meleeProgress } from '../defaults'
 
-const weapons = ['Combat Shield', 'FS Fighting Knife', 'Sawtooth', 'Katana', 'Ice Axe', "Sledgehammer"]
+const weapons = ['Combat Shield', 'FS Fighting Knife', 'Sawtooth', 'Katana', 'Ice Axe', 'Sledgehammer', 'Push Dagger']
 const original = ['Combat Shield', 'FS Fighting Knife']
 
 export default weapons.map(weapon => ({
