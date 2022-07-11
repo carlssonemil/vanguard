@@ -5,16 +5,16 @@ export default [
     requirements: {
       atomic: {
         'Assault Rifles': { default: 'Get 400 Eliminations' },
-        'Handguns': { default: 'Get 400 Eliminations' },
+        'Handguns': { default: 'Get 200 Eliminations' },
         'Launchers': {
           default: 'Get 100 Eliminations',
           'MK11 Launcher': 'Get 200 Eliminations'
         },
         'Light Machine Guns': { default: 'Get 400 Eliminations' },
-        'Marksman Rifles': { default: 'Get 400 Eliminations' },
+        'Marksman Rifles': { default: 'Get 300 Eliminations' },
         'Melee': { default: 'Get 50 Eliminations' },
-        'Shotguns': { default: 'Get 400 Eliminations' },
-        'Sniper Rifles': { default: 'Get 400 Eliminations' },
+        'Shotguns': { default: 'Get 300 Eliminations' },
+        'Sniper Rifles': { default: 'Get 300 Eliminations' },
         'Submachine Guns': { default: 'Get 400 Eliminations' }
       },
       aether: {
@@ -36,15 +36,28 @@ export default [
     name: 'Surgical',
     requirements: {
       atomic: {
-        'Assault Rifles': { default: 'Get 100 Headshots' },
-        'Handguns': { default: 'Get 100 Headshots' },
+        'Assault Rifles': {
+          default: 'Get 100 Headshots',
+          'STG44': 'Get 50 Headshots',
+          'NZ-41': 'Get 50 Headshots',
+          'Cooper Carbine': 'Get 50 Headshots',
+          'KG M40': 'Get 50 Headshots',
+        },
+        'Handguns': { default: 'Get 50 Headshots' },
         'Launchers': { default: 'Destroy 100 Enemy Killstreaks, Equipment or Field Upgrades' },
         'Light Machine Guns': { default: 'Get 100 Headshots' },
         'Marksman Rifles': { default: 'Get 100 Headshots' },
-        'Melee': { default: 'Get 50 Backstabber Kills' },
-        'Shotguns': { default: 'Get 100 Headshots' },
-        'Sniper Rifles': { default: 'Get 100 Headshots' },
-        'Submachine Guns': { default: 'Get 100 Headshots' }
+        'Melee': { 
+          default: 'Get 50 Backstabber Kills',
+          'Combat Shield': 'Get 30 Backstabber Kills',
+        },
+        'Shotguns': { default: 'Get 50 Headshots' },
+        'Sniper Rifles': { default: 'Get 50 Headshots' },
+        'Submachine Guns': {
+          default: 'Get 100 Headshots',
+          'MP-40': 'Get 50 Headshots',
+          'Sten': 'Get 50 Headshots'
+        },
       },
       aether: {
         'Assault Rifles': { default: 'In Zombies, get 800 Critical Kills' },
@@ -131,18 +144,18 @@ export default [
     name: 'Deadeye',
     requirements: {
       atomic: {
-        'Assault Rifles': { default: 'Get 100 Long Range Kills' },
-        'Handguns': { default: 'Get 100 Long Range Kills' },
+        'Assault Rifles': { default: 'Get 50 Long Range Kills' },
+        'Handguns': { default: 'Get 50 Long Range Kills' },
         'Launchers': {
           default: 'Destroy 3 Enemy Killstreaks in 1 Game 30 Times',
           'MK11 Launcher': 'Get 50 Triple Kills'
         },
-        'Light Machine Guns': { default: 'Get 100 Long Range Kills' },
-        'Marksman Rifles': { default: 'Get 100 Long Range Kills' },
+        'Light Machine Guns': { default: 'Get 50 Long Range Kills' },
+        'Marksman Rifles': { default: 'Get 50 Long Range Kills' },
         'Melee': { default: 'Get 30 Kills While Enemy is Stunned or Flashed' },
-        'Shotguns': { default: 'Get 100 Long Range Kills' },
-        'Sniper Rifles': { default: 'Get 100 Long Range Kills' },
-        'Submachine Guns': { default: 'Get 100 Long Range Kills' }
+        'Shotguns': { default: 'Get 50 Long Range Kills' },
+        'Sniper Rifles': { default: 'Get 50 Long Range Kills' },
+        'Submachine Guns': { default: 'Get 50 Long Range Kills' }
       },
       aether: {
         'Assault Rifles': { default: 'In Zombies, get 2000 Eliminations as a result of an equipped Covenant' },
@@ -162,7 +175,7 @@ export default [
     requirements: {
       atomic: {
         'Assault Rifles': { default: 'Get 100 Close Range Kills' },
-        'Handguns': { default: 'Get 100 Close Range Kills' },
+        'Handguns': { default: 'Get 50 Close Range Kills' },
         'Light Machine Guns': { default: 'Get 100 Close Range Kills' },
         'Marksman Rifles': { default: 'Get 100 Close Range Kills' },
         'Shotguns': { default: 'Get 100 Close Range Kills' },
@@ -210,14 +223,14 @@ export default [
         'Assault Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'STG44': 'Get 100 ADS Kills with the Krausnick 220mm Rapid Barrel, 7.62 Gorenko 30 Round Mags, and VDD 27 Precision Stock Equipped',
-          'Bar': 'Get 100 Longshot Kills with the CGC 30" XL Barrel, Pistol Grip Custom Stock, and Discard Proficiency Equipped',
+          'Bar': 'Get 50 Longshot Kills with the CGC 30" XL Barrel, Pistol Grip Custom Stock, and Discard Proficiency Equipped',
           'AS44': 'Get 100 Hipfire Kills with the Empress 400mm Barrel, .30 Russian Short 60 Round Mags, and Steady Proficiency Equipped',
           'Automaton': 'Get 100 Kills While Moving with the 6.5mm Sakura 45 Round Mags, ZAC Skeletal Stock, and Spotter Proficiency Equipped',
           'Itra Burst': 'Get 100 Hipfire Kills with the Imerito 180mm 02BI Barrel, 8mm Klauser 12 Round Fast Mags, and Botti SSI Skeletal Equipped',
-          'NZ-41': 'Get 100 Headshots with the Orbweaver 360mm BC Barrel, LOR MK3 SC Stock, and Defender Kit Equipped',
+          'NZ-41': 'Get 50 Headshots with the Orbweaver 360mm BC Barrel, LOR MK3 SC Stock, and Defender Kit Equipped',
           'Volkssturmgewehr': 'Get 100 ADS Kills with the VDD 287mm Barrel, 8mm Kurz 20 Round Fast Mags, and Krausnick S12V PS Stock Equipped' ,
           'Cooper Carbine': 'Get 100 ADS Kills with the 22" Cooper Custom Barrel, Cooper Custom Padded Stock, and Hardscope Proficiency Equipped',
-          'KG M40': 'Get 100 Headshot Kills with the VDD 24SZ Adjustable Stock, 8mm Klauser 20 Round Mags, and Discard Proficiency Equipped'
+          'KG M40': 'Get 50 Headshot Kills with the VDD 24SZ Adjustable Stock, 8mm Klauser 20 Round Mags, and Discard Proficiency Equipped'
         },
         'Handguns': {
           default: 'Get 50 Kills with Certain Attachments Equipped',
@@ -244,7 +257,7 @@ export default [
         'Shotguns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Combat Shotgun': 'Get 100 ADS Kills with the Chariot 16" Short Barrel, 12 Gauge 5 Round Tube Mags, and CGC 2M Wire Stock Equipped',
-          'Double Barrel': 'Get 100 Headshots with the Wilkie Huntsman Barrel, Wilkie Marksman Stock, and Vital Proficiency Equipped',
+          'Double Barrel': 'Get 50 Headshots with the Wilkie Huntsman Barrel, Wilkie Marksman Stock, and Vital Proficiency Equipped',
           'Gracey Auto': 'Get 100 Hipfire Kills with the CGC 22" Rapid Barrel, 12 Gauge 7 Round Mags, and Chariot Sport Stock Equipped',
           'Einhorn Revolving': 'Get 50 Kills Without Taking Damage from that Enemy with the Sawed-Off Barrel, 16 Gauge 7 Round Cylinder Mags, and Reisdorf Folding Stock Equipped'
         },
@@ -252,14 +265,14 @@ export default [
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Kar98k': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick Scout Barrel, 6.5mm Sakura 5 Round Mags, and the Unmarked Proficiency Equipped',
           'Type 99': 'Get 100 Longshot Kills with the Shiraishi 712mm Sniper Barrel, Shiraishi Precision Stock, and Spotter Proficiency Equipped',
-          '3-Line Rifle': 'Get 100 Longshot Kills with the 270mm Voz Carbine Barrel, .30-06 20 Round Mags, and Kovalevskaya S01 Stock Equipped' ,
+          '3-Line Rifle': 'Get 50 Longshot Kills with the 270mm Voz Carbine Barrel, .30-06 20 Round Mags, and Kovalevskaya S01 Stock Equipped' ,
           'Gorenko Anti-Tank Rifle': 'Get 100 Kills After Recently Aiming Down Sights with the 420mm Empress Barrel, ZAC Custom Precision Stock, and Discard Proficiency Equipped'
         },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'MP-40': 'Get 100 Longshot Kills with the Krausnick 317mm 04B Barrel, 8mm Kurz 32 Round Mags, and VDD 34M Padded Stock Equipped',
+          'MP-40': 'Get 50 Longshot Kills with the Krausnick 317mm 04B Barrel, 8mm Kurz 32 Round Mags, and VDD 34M Padded Stock Equipped',
           'M1928': 'Get 100 Kills Without Taking Damage from that Enemy with the Chariot 2.5" Rapid Barrel, CGC Wire Grip Stock, and Disable Proficiency Equipped',
-          'Type 100': 'Get 100 Longshot Kills with the Warubachi 134mm Rapid Barrel, 8mm Kurz 40 Round Drums Mags, and Shiraishi T100 Stock Equipped',
+          'Type 100': 'Get 50 Longshot Kills with the Warubachi 134mm Rapid Barrel, 8mm Kurz 40 Round Drums Mags, and Shiraishi T100 Stock Equipped',
           'PPSh-41': 'Get 100 Kills Without Taking Damage from that Enemy with the 8mm Nambu 71 Round Mags, Empress S12P Stock, and Tiger Grip Proficiency Equipped',
           'Sten': 'Get 100 ADS KIils with the Hockenson 248mm Burst Barrel, .45 ACP 20 Round Fast Mags, and Gawain Custom Stock Equipped',
           'Owen Gun': 'Get 100 Hipfire Kills While Moving with the 9mm 72 Round Mags, LOR Folding Stock, and Steady Proficiency Equipped'
@@ -282,14 +295,14 @@ export default [
       atomic: {
         'Assault Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'STG44': 'Get 100 Headshots with the Krausnick 620mm Precision Barrel, .30 Russian Short 30 Round Mags, and Vital Proficiency Equipped',
+          'STG44': 'Get 50 Headshots with the Krausnick 620mm Precision Barrel, .30 Russian Short 30 Round Mags, and Vital Proficiency Equipped',
           'Bar': 'Get 100 Bullet Pen Kills with the .50 BMG 20 Round Mags. Cooper SP Stock, and Driller Proficiency Equipped',
           'AS44': 'Get 100 ADS Kills with the ZAC 650mm Precision Barrel, 7.62x54mmR 30 Round Mags, and ZAC 12A Stock Equipped',
           'Automaton': 'Get 100 ADS Kills with the Anastasia Sniper Barrel, Empress Broadsword Stock, and Frenzy Proficiency Equipped',
           'Itra Burst': 'Get 100 ADS Kills with the Perfetto 140mm Rapida Barrel, Botti SMI Adjustable Stock, and Surveil Proficiency Equipped',
           'NZ-41': 'Get 100 ADS Kills with the Ravenwood 480mm NO.2 Barrel, .303 British 20 Round Fast Mags, Acrobatic Proficiency Equipped',
           'Volkssturmgewehr': 'Get 100 Kills While Moving with the 8mm Kurz 60 Round Drums Mags, SA Converted Stock, and Gung-Ho Proficiency Equipped',
-          'Cooper Carbine': 'Get 100 Headshots with the 18" Ragdoll G45 Barrel, 9mm 60 Round Drum Mags, and Vital Proficiency Equipped',
+          'Cooper Carbine': 'Get 50 Headshots with the 18" Ragdoll G45 Barrel, 9mm 60 Round Drum Mags, and Vital Proficiency Equipped',
           'KG M40': 'Get 100 Close Range Kills with the VDD 390mm Rapid Barrel, 8mm Klauser 50 Round Drums, and VDD 22G Padded Stock Equipped'
         },
         'Handguns': {
@@ -358,7 +371,7 @@ export default [
           'STG44': 'Get 100 Kills While Moving with the .30 Russian Short 20 Round Mags, Konstanz Tactical Stock, and Pressure Proficiency Equipped',
           'Bar': 'Get 100 Kills While Moving with the Cooper 21" Scythe Barrel, 8mm Klauser 20 Round Mags, and Acrobatic Proficiency Equipped',
           'AS44': 'Get 100 Kills While Moving with the Empress Falchion A Barrel, Kovalevskaya Custom Stock, and Disable Proficiency Equipped',
-          'Automaton': 'Get 100 Longshot Kills with the Zac 600mm BFA Barrel, 6.5MM Sakura 75 Round Drums Mags, and Anastasia Padded Stock Equipped',
+          'Automaton': 'Get 50 Longshot Kills with the Zac 600mm BFA Barrel, 6.5MM Sakura 75 Round Drums Mags, and Anastasia Padded Stock Equipped',
           'Itra Burst': 'Get 100 Quickscope Kills with the 6.5mm Sakura 20 Round Mags, Botti DII Grip Stock, and Quickscope Proficiency Equipped',
           'NZ-41': 'Get 100 Kills Without Taking Damage from that Enemy with the Orbweaver Custom Barrel, 8mm Klauser 30 Round Mags, and Orbweaver Folding Stock Equipped',
           'Volkssturmgewehr': 'Get 100 Kills Without Taking Damage from that Enemy with the Krausnick 428mm 05V Barrel, 7.62 Gorenko 30 Round Mags, and Perfectionist Proficiency Equipped',
@@ -376,38 +389,38 @@ export default [
         'Light Machine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
           'Bren': 'Get 100 Longshot Kills with the Queens 705mm Royal Barrel, Hockenson SP2B Stock, and Dismantle Proficiency Equipped',
-          'MG42': 'Get 100 Longshot Kills with the Krausnick 450mm1342MG Barrel, 13mm Anti-Material 125 Round Mags, and Wreck Proficiency Equipped',
+          'MG42': 'Get 50 Longshot Kills with the Krausnick 450mm1342MG Barrel, 13mm Anti-Material 125 Round Mags, and Wreck Proficiency Equipped',
           'DP27': 'Get 100 Kills While Crouched or Prone with the .30-06 63 Round Pans Mags, Empress VZV Stock, and Defender Proficiency Equipped',
           'Type 11': 'Get 100 ADS Kills with the Sakura 261mm Barrel, 6.5mm Sakura 30 Round Mags, and Fleet Proficiency Equipped',
           'Whitley': 'Get 100 Long Range Kills with the 28" Gracey Mk. 9 Barrel, .50 BMG 160 Round Boxes, and Frenzy Proficiency Equipped'
          },
         'Marksman Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'M1 Garand': 'Get 100 Longshot Kills with the Cooper 25" Custom Barrel, .30-06 12 Round Mags, and Acquisition Proficiency Equipped',
+          'M1 Garand': 'Get 50 Longshot Kills with the Cooper 25" Custom Barrel, .30-06 12 Round Mags, and Acquisition Proficiency Equipped',
           'SVT-40': 'Get 100 Kills Without Taking Damage from that Enemy with the Kovalevskaya Custom Barrel, 6.5 Sakura 15 Round Mags, and Perfectionist Proficiency Equipped',
           'G-43': 'Get 100 ADS Kills with the Wyvern Burst Barrel, 8mm Klauser 20 Round Mags, and Fitzherbert Reinforced Stock Equipped'
         },
         'Shotguns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'Combat Shotgun': 'Get 100 Headshots with the Framble 18" Precision Barrel, 16 Gauge 10 Round Drums Mags, and Vital Proficiency Equipped',
+          'Combat Shotgun': 'Get 50 Headshots with the Framble 18" Precision Barrel, 16 Gauge 10 Round Drums Mags, and Vital Proficiency Equipped',
           'Gracey Auto': 'Get 100 ADS Kills with the Sawed-Off Barrel, CGC H4 Stock, and Frenzy Proficiency Equipped',
           'Double Barrel': 'Get 100 ADS Kills with the Sawed-Off Barrel, Fast Loading 12 Gauge Mags, and Panic Proficiency Equipped',
           'Einhorn Revolving': 'Get 100 Hipfire Kills While Moving with the Birdshot 5 Round Cylinder Mags, VDD Hunter Stock, and Gung-ho Proficiency Equipped'
         },
         'Sniper Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'Kar98k': 'Get 100 Longshot Kills with the VDD 660mm 05HE Barrel, VDD Thumbhole Stock, and Shrouded Proficiency Equipped',
+          'Kar98k': 'Get 50 Longshot Kills with the VDD 660mm 05HE Barrel, VDD Thumbhole Stock, and Shrouded Proficiency Equipped',
           'Type 99': 'Get 100 ADS Kills with the Sakura 776mm Barrel, 6.5mm Sakura 3 Round Fast Mags, and Sakura CVR Custom Stock Equipped',
-          '3-Line Rifle': 'Get 100 Headshots with the 500mm MN Custom Barrel, .30-06 20 Round Mags, and Hardscope Proficiency Equipped',
+          '3-Line Rifle': 'Get 50 Headshots with the 500mm MN Custom Barrel, .30-06 20 Round Mags, and Hardscope Proficiency Equipped',
           'Gorenko Anti-Tank Rifle': 'Get 100 Kills While Crouched or Prone with the 440mm Anastasia Custom Barrel, 13mm AM 10 Round Mags, and Kovalevskaya Type 2 Padded Stock Equipped'
         },
         'Submachine Guns': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'MP-40': 'Get 100 Headshots with the VDD 189mm Short Barrel, VDD 34M Stock, and Steady Proficiency Equipped',
+          'MP-40': 'Get 50 Headshots with the VDD 189mm Short Barrel, VDD 34M Stock, and Steady Proficiency Equipped',
           'M1928': 'Get 100 ADS Kills with the .45 ACP 30 Round Fast Mags, Chariot Marksman Stock, and Steady Proficiency Equipped',
           'Type 100': 'Get 100 Hipfire Kills While Moving with the 8mm Nambu 20 Round Mags, Sakura Type 2 Stock, and Fleet Proficiency Equipped',
           'PPSh-41': 'Get 100 ADS Kills with the Kovalevskaya 230mm BO3P Barrel, 7.62mm Gorenko 71 Round Mags, and ZAC Folding Stock Equipped',
-          'Sten': 'Get 100 Headshots with the Hockenson 348mm B13S Barrel, 9mm 20 Round Mags. and Steady Proficiency Equipped',
+          'Sten': 'Get 50 Headshots with the Hockenson 348mm B13S Barrel, 9mm 20 Round Mags. and Steady Proficiency Equipped',
           'Owen Gun': 'Get 100 Close Range Kills with the Gawain 188mm Shrouded Barrel, Gawain H4 Folding Stock, and Wreck Proficiency Equipped'
         }
       },
