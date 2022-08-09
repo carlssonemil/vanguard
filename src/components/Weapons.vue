@@ -150,7 +150,7 @@
 
             border-left-width: $border-size;
             border-left-style: solid;
-            padding-left: #{ ($padding / 2) - $border-size };
+            padding-left: #{ (math.div($padding, 2)) - $border-size };
 
             &.atomic {
               border-color: $purple;

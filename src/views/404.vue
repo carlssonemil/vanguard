@@ -34,7 +34,7 @@
     font-weight: 600;
     letter-spacing: $size;
     position: relative;
-    text-shadow: $size / 2 $size / 2 0 black;
+    text-shadow: math.div($size, 2) math.div($size, 2) 0 black;
 
     &:after {
       animation: shad-anim 15s linear infinite;
