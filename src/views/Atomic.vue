@@ -34,21 +34,29 @@
 
         let { hideCompleted, hideNonRequired, category } = this.$store.state.filters.atomic;
 
-        if (hideCompleted) weapons = weapons.filter(w => !Object.values(w.progress.atomic).every(Boolean));
-
         if (hideNonRequired) {
           weapons = weapons.filter(weapon => {
             const categoryWeapons = weapons.filter(w => w.category === weapon.category);
-            const required = categoryWeapons.filter(w => !w.dlc).length * 10;
+            let camouflages;
+
+            if (['Melee', 'Launchers'].includes(weapon.category)) {
+              camouflages = 5;
+            } else {
+              camouflages = 10;
+            }
+
+            const required = categoryWeapons.filter(w => !w.dlc).length * camouflages;
             const completed = categoryWeapons.reduce((a, w) => a + Object.values(w.progress.atomic).reduce((b, progress) => b + progress, 0), 0);
 
-            if (completed === required && !Object.values(weapon.progress.atomic).every(Boolean)) {
+            if (completed >= required && !Object.values(weapon.progress.atomic).every(Boolean)) {
               return false;
             } else {
               return true;
             }
           });
         }
+
+        if (hideCompleted) weapons = weapons.filter(w => !Object.values(w.progress.atomic).every(Boolean));
 
         if (category && category !== 'null') weapons = weapons.filter(w => w.category === category);
 

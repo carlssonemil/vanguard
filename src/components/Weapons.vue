@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import { convertToKebabCase } from '@/utils/utils'
+  import { convertToKebabCase, groupBy } from '@/utils/utils'
 
   export default {
     props: ['weapons', 'mode'],
@@ -61,7 +61,8 @@
       },
 
       categoryProgress(category) {
-        const categoryWeapons = this.weapons[category];
+        const allWeapons = groupBy(this.$store.state.weapons, weapon => weapon.category);
+        const categoryWeapons = allWeapons[category];
         const required = categoryWeapons.filter(weapon => !weapon.dlc).length;
         const completed = categoryWeapons.reduce((a, weapon) => a + Object.values(weapon.progress[this.mode]).every(Boolean), 0);
 
