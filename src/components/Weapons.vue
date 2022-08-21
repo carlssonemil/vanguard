@@ -2,7 +2,7 @@
   <div>
     <transition-group name="fade" tag="div" class="container">
       <div class="category" v-for="(category, title, index) in weapons" :key="title" :data-index="index">
-        <h2>{{ title }}<span class="category-progress">{{ categoryProgress(title) }}</span></h2>
+        <h2>{{ title }}<span class="category-progress" v-tippy content="Required for Diamond camouflage">{{ categoryProgress(title) }}</span></h2>
         <transition-group name="fade" tag="div" class="weapons">
           <div class="weapon" v-for="weapon in category" :key="weapon.name">
             <div :class="['name', mode, { completed: completed(weapon, mode) }, { required: weapon.required }]"
