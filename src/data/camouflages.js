@@ -323,7 +323,7 @@ export default [
         },
         'Marksman Rifles': {
           default: 'Get 100 Kills with Certain Attachments Equipped',
-          'M1 Garand': 'Get 100 Kills While Crouched or Prone with the 6.5 Sakura 16 Round Drum Mags, Chariot S1 Stock Equipped',
+          'M1 Garand': 'Get 100 Kills While Crouched or Prone with the 6.5mm Sakura 16 Round Drum Mags, Chariot S1 Custom Stock, and the Spotter Proficiency',
           'SVT-40': 'Get 100 Kills Without Taking Damage from that Enemy with the Kovalevskaya 800mm B03 Barrel, Empress Crown Stock, and Vital Proficiency Equipped',
           'G-43': 'Get 100 Kills Without Taking Damage from that Enemy with the Wyvern 570mm Full-Auto Barrel, ZP Padded Stock, and Tight Grip Proficiency Equipped'
         },
