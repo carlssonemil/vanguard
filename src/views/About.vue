@@ -15,6 +15,9 @@
       <h4>Open source</h4>
       <p>Built with <a href="https://vuejs.org/">Vue</a>, hosted on <a href="https://vercel.com/">Vercel</a> and analytics by <a href="https://plausible.io/">Plausible</a>. The code to this site is available on <a href="https://github.com/carlssonemil/vanguard">GitHub</a>.</p>
     
+      <h4>Orion</h4>
+      <p>Looking for a completionist tracker for <i>Call of Duty: Modern Warfare 2 (2022)</i>? I made one conveniently named <a href="https://orion.emca.app">Orion</a>.</p>
+    
       <h4>DM Ultra & Dark Aether</h4>
       <p>Looking for a completionist tracker for <i>Call of Duty: Cold War (2020)</i>? I made one conveniently named <a href="https://coldwar.vercel.app">Cold War</a>.</p>
 
